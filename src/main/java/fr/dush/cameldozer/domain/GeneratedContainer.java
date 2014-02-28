@@ -7,13 +7,21 @@ public class GeneratedContainer {
 
     private List<Person> persons = new ArrayList<>();
 
-    public class Person {
+    public static class Person {
 
         private String name;
 
         private int age;
 
         private String employer;
+
+        public Person() {}
+
+        public Person(String name, int age, String employer) {
+            this.name = name;
+            this.age = age;
+            this.employer = employer;
+        }
 
         public String getName() {
             return name;
